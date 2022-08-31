@@ -1,0 +1,12 @@
+plugins {
+    id 'com.android.library'
+    id 'core-conventions'
+    id 'network-conventions'
+    id 'ui-conventions'
+    id 'test-conventions'
+    id 'android-test-conventions'
+}
+
+android {
+    namespace 'ua.zloydi.core'
+}

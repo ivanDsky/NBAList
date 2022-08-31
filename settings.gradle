@@ -13,5 +13,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Template"
+rootProject.name = "NBAList"
 include ':app'
+include ':core'
+include ':di'
+include ':feature:list'
+include ':feature:detail'
+
