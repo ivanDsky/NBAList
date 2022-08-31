@@ -4,6 +4,7 @@ plugins {
     id 'network-conventions'
     id 'ui-conventions'
     id 'dagger-conventions'
+    id 'test-conventions'
 }
 
 android {
