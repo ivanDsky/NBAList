@@ -1,0 +1,9 @@
+plugins {
+    id 'com.android.library'
+    id 'core-conventions'
+    id 'dagger-conventions'
+}
+
+android {
+    namespace 'ua.zloydi.di'
+}
