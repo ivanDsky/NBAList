@@ -7,5 +7,5 @@ import ua.zloydi.list.network.models.PlayerListResponse
 
 internal interface IService {
 	@GET("/players")
-	fun getPlayerStats(@Query("page") page: Int, @Query("per_page") size: Int): Single<PlayerListResponse>
+	fun getPlayers(@Query("page") page: Int, @Query("per_page") size: Int): Single<PlayerListResponse>
 }
