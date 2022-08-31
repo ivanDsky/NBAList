@@ -3,15 +3,15 @@ package ua.zloydi.list.network.models
 import com.google.gson.annotations.SerializedName
 
 data class PlayerListResponse(
-
+	
 	@field:SerializedName("data")
-	val data: List<DataItem>,
-
+	val data: List<PlayerItem>,
+	
 	@field:SerializedName("meta")
 	val meta: Meta,
 )
 
-data class DataItem(
+data class PlayerItem(
 
 	@field:SerializedName("weight_pounds")
 	val weightPounds: Any? = null,
