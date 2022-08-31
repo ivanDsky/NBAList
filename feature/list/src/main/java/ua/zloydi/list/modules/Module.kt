@@ -4,6 +4,7 @@ import dagger.BindsInstance
 import retrofit2.Retrofit
 import retrofit2.create
 import ua.zloydi.di.Dependencies
+import ua.zloydi.list.network.IService
 
 interface ListFeatureDeps: Dependencies {
 	val retrofit: Retrofit
