@@ -20,7 +20,7 @@ class NetworkModule {
 	fun provideRetrofit(client: OkHttpClient) = Retrofit.Builder()
 		.addConverterFactory(GsonConverterFactory.create())
 		.addCallAdapterFactory(RxJava3CallAdapterFactory.create())
-		.baseUrl("https://www.balldontlie.io/api/v1/")
+		.baseUrl("https://www.balldontlie.io/")
 		.client(client)
 		.build()
 }
