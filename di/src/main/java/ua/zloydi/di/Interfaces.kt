@@ -5,5 +5,5 @@ typealias MapDependencies = @JvmSuppressWildcards Map<Class<out Dependencies>, D
 interface Dependencies
 
 interface HasDependencies {
-	val dependencies: MapDependencies
+    val dependencies: MapDependencies
 }

@@ -9,4 +9,4 @@ inline fun <reified D : Dependencies> Activity.findDependencies(): D = parents.f
 inline fun <reified D : Dependencies> Application.findDependencies(): D = parents.findDependencies()
 
 inline fun <reified D : Dependencies> Iterable<HasDependencies>.findDependencies(): D =
-	firstNotNullOfOrNull { it.dependencies[D::class.java] as? D } ?: error("No dependencies")
+    firstNotNullOfOrNull { it.dependencies[D::class.java] as? D } ?: error("No dependencies")

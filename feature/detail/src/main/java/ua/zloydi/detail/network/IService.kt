@@ -6,6 +6,9 @@ import retrofit2.http.Query
 import ua.zloydi.detail.network.models.PlayerDetailResponse
 
 internal interface IService {
-	@GET("/api/v1/season_averages")
-	fun getPlayerStats(@Query("player_ids[]") playerId: Int, @Query("season") season: Int): Single<PlayerDetailResponse>
+    @GET("/api/v1/season_averages")
+    fun getPlayerStats(
+        @Query("player_ids[]") playerId: Int,
+        @Query("season") season: Int
+    ): Single<PlayerDetailResponse>
 }
