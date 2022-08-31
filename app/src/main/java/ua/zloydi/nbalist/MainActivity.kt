@@ -1,4 +1,4 @@
-package ua.zloydi.template
+package ua.zloydi.nbalist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
