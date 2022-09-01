@@ -1,0 +1,15 @@
+plugins {
+    id 'com.android.library'
+    id 'core-conventions'
+    id 'dagger-conventions'
+    id 'network-conventions'
+    id 'ui-conventions'
+}
+
+android {
+    namespace 'ua.zloydi.coreui'
+}
+
+dependencies {
+    implementation project(":di")
+}
