@@ -12,9 +12,9 @@ typealias ViewModelMap = @JvmSuppressWildcards Map<Class<out ViewModel>, Provide
 annotation class ViewModelKey(val key: KClass<out ViewModel>)
 
 class ViewModelFactory(
-	private val viewModelMap: ViewModelMap
+    private val viewModelMap: ViewModelMap
 ) : ViewModelProvider.Factory {
-	override fun <T : ViewModel> create(modelClass: Class<T>): T {
-		return (viewModelMap[modelClass]?.get() as? T) ?: error("No viewModel found")
-	}
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return (viewModelMap[modelClass]?.get() as? T) ?: error("No viewModel found")
+    }
 }

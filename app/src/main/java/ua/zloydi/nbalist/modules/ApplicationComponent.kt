@@ -10,17 +10,16 @@ import ua.zloydi.di.DependencyKey
 import ua.zloydi.list.modules.ListFeatureDeps
 import ua.zloydi.nbalist.Application
 
-
 @dagger.Module
-interface ApplicationModule{
-	@[Binds IntoMap DependencyKey(ListFeatureDeps::class)]
-	fun bindListFeatureDeps(component: ApplicationComponent): Dependencies
-	
-	@[Binds IntoMap DependencyKey(DetailFeatureDeps::class)]
-	fun bindDetailFeatureDeps(component: ApplicationComponent): Dependencies
+interface ApplicationModule {
+    @[Binds IntoMap DependencyKey(ListFeatureDeps::class)]
+    fun bindListFeatureDeps(component: ApplicationComponent): Dependencies
+
+    @[Binds IntoMap DependencyKey(DetailFeatureDeps::class)]
+    fun bindDetailFeatureDeps(component: ApplicationComponent): Dependencies
 }
 
 @dagger.Component(modules = [NetworkModule::class, ApplicationModule::class])
 interface ApplicationComponent : ListFeatureDeps, DetailFeatureDeps {
-	fun inject(application: Application)
+    fun inject(application: Application)
 }
