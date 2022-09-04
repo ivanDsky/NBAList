@@ -9,10 +9,6 @@ android{
     }
 }
 
-rootProject.ext {
-    epoxy_version = "5.0.0-beta05"
-}
-
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
@@ -33,7 +29,4 @@ dependencies {
 
     //ViewBinding delegate
     implementation 'com.github.yogacp:android-viewbinding:1.0.4'
-
-    //Epoxy
-    implementation "com.airbnb.android:epoxy:$epoxy_version"
 }
