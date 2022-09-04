@@ -23,19 +23,19 @@ data class PlayerItem(
     val heightInches: Any? = null,
 
     @field:SerializedName("last_name")
-    val lastName: String? = null,
+    val lastName: String,
 
     @field:SerializedName("id")
-    val id: Int? = null,
+    val id: Int,
 
     @field:SerializedName("position")
-    val position: String? = null,
+    val position: String?,
 
     @field:SerializedName("team")
     val team: Team? = null,
 
     @field:SerializedName("first_name")
-    val firstName: String? = null
+    val firstName: String,
 )
 
 data class Meta(
