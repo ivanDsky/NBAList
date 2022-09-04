@@ -13,8 +13,8 @@ android {
 
 dependencies {
     implementation project(":di")
+    implementation project(":core")
     implementation project(":core-ui")
-    testImplementation project(":core")
 
     def paging_version = "3.1.1"
 
@@ -25,6 +25,4 @@ dependencies {
 
     // optional - RxJava3 support
     implementation "androidx.paging:paging-rxjava3:$paging_version"
-
-    implementation "com.airbnb.android:epoxy-paging3:$epoxy_version"
 }
